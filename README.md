@@ -29,7 +29,7 @@
    ```pd.read_csv('/content/drive/MyDrive/IS3107/bitcoin.csv')```
    ```pd.read_csv('/content/drive/MyDrive/IS3107/Finalised_Sentiments.csv')```
    with the updated file paths, such as:
-   pd.read_csv('/content/bitcoin.csv')
-   pd.read_csv('/content/Finalised_Sentiments.csv')
+   ```pd.read_csv('/content/bitcoin.csv')```
+   ```pd.read_csv('/content/Finalised_Sentiments.csv')```
 7. Run the entire notebook by clicking on "Runtime" in the top menu, and then selecting "Run all". Alternatively, you can run each cell one by one by clicking the "Play" button on the left side of each cell.
 8. Once the script finishes running, you'll see the plots.
