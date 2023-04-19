@@ -39,3 +39,5 @@ The objective of this Python file is to provide exploratory data analysis and da
 
 #### 3)Dashboard.py
 
+![Bitcoin Predictions Dashboard](https://ibb.co/dMHs9SD"><img src="https://i.ibb.co/kBPVnpX/bitcoin-dashboard.png)
+
