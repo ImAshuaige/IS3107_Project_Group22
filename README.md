@@ -2,8 +2,11 @@
 
 ### Objective
 #### Dag.py
-#### Dashboard.py
+
 #### EDA.py
+The objective of this Python file is to provide exploratory data analysis and data visualization for the obtained datasets. These techniques will help the user gain an overall and better understanding of the relationships, distributions, quality, and patterns of the data. For example, this Python file will analyze the general trend of Bitcoin price over time, as well as the correlation between tweet sentiment scores and the Bitcoin price etc. The insights gained from the EDA will then be used for prediction models later.
+
+#### Dashboard.py
 
 ### Tools & Technologies
 - Storage - [PostgreSQL](https://www.postgresql.org/)
@@ -17,12 +20,12 @@
 
 ### Instructions on Running the Files
 1. Download all the files in the GitHub repository. 
-### Detailed Steps for Each File
-#### Dag.py
+2. The order of running the files should be: 1)Dag.py -> 2)EDA.py -> 3)Dashboard.py
 
-#### Dashboard.py
+### Detailed Steps for Running Each File
+#### 1)Dag.py
 
-#### EDA.py
+#### 2)EDA.py
 1. Open your web browser and go to https://colab.research.google.com/.
 2. Convert the EDA.**py** file to a Jupyter Notebook format by renaming it to EDA.**ipynb**.
 3. Click on "Upload" in the "Upload or Create Notebook" dialog to upload the Python file (EDA.ipynb).
@@ -33,3 +36,6 @@
    with the updated file paths, such as: ```pd.read_csv('/content/bitcoin.csv')``` and ```pd.read_csv('/content/Finalised_Sentiments.csv')```
 7. Run the entire notebook by clicking on "Runtime" in the top menu, and then selecting "Run all". Alternatively, you can run each cell one by one by clicking the "Play" button on the left side of each cell.
 8. Once the script finishes running, you'll see the plots.
+
+#### 3)Dashboard.py
+
