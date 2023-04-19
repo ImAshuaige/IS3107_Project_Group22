@@ -2,7 +2,7 @@
 
 ### Objective
 #### Dag.py
-The objective of this Python file is to collect, transform, and load data related to Bitcoin prices and tweets into a PostgreSQL database. This data is loaded from 3 distinct sources including Kaggle, CoinMarketCap API and the Snscrape command line tool. Additionally, this file will perform sentiment analysis on the collected tweets using the VADER sentiment analyzer. The collected data will be used for exploratory data analysis and data visualization to gain insights into the general trend of Bitcoin prices over time.
+The objective of this Python file is to collect, transform, and load data related to Bitcoin prices and tweets into a PostgreSQL database. This data is loaded from 3 distinct sources including Kaggle, CoinMarketCap API and the Snscrape command line tool. Additionally, this file will perform sentiment analysis on the collected tweets using the VADER sentiment analyzer. The collected data will be used for exploratory data analysis and data visualization to gain insights into the general trends and correlations between certain variables.
 
 #### EDA.py
 The objective of this Python file is to provide exploratory data analysis and data visualization for the obtained datasets. These techniques will help the user gain an overall and better understanding of the relationships, distributions, quality, and patterns of the data. For example, this Python file will analyze the general trend of Bitcoin price over time, as well as the correlation between tweet sentiment scores and the Bitcoin price etc. The insights gained from the EDA will then be used for prediction models later.
@@ -27,6 +27,11 @@ The objective of this Python file is to provide exploratory data analysis and da
 
 ### Detailed Steps for Running Each File
 #### 1)Dag.py
+1. Set up a PostgreSQL database using the following structure -> postgresql+psycopg2://postgres:[password]@localhost:[port_number]/[database_name]. We recommend creating the following connection -> postgresql+psycopg2://postgres:password@localhost:5432/IS3107_Project [password: password, port_number: 5432, database_name: IS3107_Project] If your connection is different, it needs to be updated within the following tasks: transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data).
+2. Save the updated code as a python file on your local machine 
+3. Save the initial_tweets.json file on your local machine and update the directory in the transform_data() function
+4. Create a python environment and activate it using the following command: source /path/to/env/bin/activate
+6. Run the following command to execute the file and trigger the DAG: airflow dags test IS3107_project
 
 #### 2)EDA.py
 1. Open your web browser and go to https://colab.research.google.com/.
