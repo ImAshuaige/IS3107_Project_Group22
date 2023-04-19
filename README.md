@@ -21,6 +21,8 @@ The objective of this Python file is to provide exploratory data analysis and da
 ### Instructions on Running the Files
 1. Download all the files in the GitHub repository. 
 2. The order of running the files should be: 1)Dag.py -> 2)EDA.py -> 3)Dashboard.py
+3. Create a Python environment by running ```python3 -m venv env``` and activate the environment using ```source env/bin/activate```
+4. In the environment created, install the required packages by running ```pip install -r requirements.txt```
 
 ### Detailed Steps for Running Each File
 #### 1)Dag.py
@@ -38,6 +40,8 @@ The objective of this Python file is to provide exploratory data analysis and da
 8. Once the script finishes running, you'll see the plots.
 
 #### 3)Dashboard.py
+1. Run the dashboard.py script within the Python environment created earlier using ```python3 dashboard.py```
+2. Go to (http://127.0.0.1:8051) to view the dashboard below.
 
 ![Bitcoin Predictions Dashboard](https://i.ibb.co/r4CWjGL/bitcoin-dashboard.png)
 
