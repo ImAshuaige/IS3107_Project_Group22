@@ -27,14 +27,15 @@ The objective of this Python file is to provide exploratory data analysis and da
 
 ### Detailed Steps for Running Each File
 #### 1)Dag.py
-1. Set up a PostgreSQL database using the following structure: ```postgresql+psycopg2://postgres:[password]@localhost:[port_number]/[database_name]``` 
-2. We recommend creating the following connection: ```postgresql+psycopg2://postgres:password@localhost:5432/IS3107_Project``` such that [**password**: password, **port_number**: 5432, **database_name**: IS3107_Project] 
-3. If your connection is different, it needs to be updated within the following tasks: ```transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data)```.
-4. Save the updated code as a python file on your local machine within the ```dags`````` folder in your airflow directory
-6. Save the ```initial_tweets.json``` file on your local machine and update the directory in the ```transform_data()``` function
-7. Create a python environment and activate it using the following command: ```source /path/to/env/bin/activate```
-8. Within this environment, navigate to the dags folder where the ```IS3107_project.py``` file was saved in
-9. Run the following command to execute the file and trigger the DAG: ```airflow dags test IS3107_project```
+1. Download PGAdmin 4 to easily access the tables that will be created after running this file.
+2. Set up a PostgreSQL connection using the following structure: ```postgresql+psycopg2://postgres:password@localhost:5432/IS3107_Project``` such that the database has these specifications [**password**: password, **port_number**: 5432, **database_name**: IS3107_Project] 
+3. If your connection is different from the connection defined in step 3, it needs to be updated within the following tasks: ```transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data)```.
+4. Save the updated code as a python file on your local machine within the ```dags``` folder in your airflow directory
+5. Save the ```initial_tweets.json``` file on your local machine and update the directory in the ```transform_data()``` function
+6. Create a python environment and activate it using the following command: ```source /path/to/env/bin/activate```
+7. Within this environment, navigate to the dags folder where the ```IS3107_project.py``` file was saved 
+8. Run the following command to execute the file and trigger the DAG: ```airflow dags test IS3107_project```
+9. Once this command is successfully completed, 3 tables will appear within PostgreSQL & PGAdmin 4: ```bitcoin_tweet, bitcoin_prices and bitcoin_tweets_sentiment```
 10. Do we need to ask the user to create their own CoinMarketCap API and Snscrape accounts?
 
 #### 2)EDA.py
