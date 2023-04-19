@@ -27,8 +27,8 @@ The objective of this Python file is to provide exploratory data analysis and da
 
 ### Detailed Steps for Running Each File
 #### 1)Dag.py
-1. Set up a PostgreSQL database using the following structure: postgresql+psycopg2://postgres:[password]@localhost:[port_number]/[database_name]. 
-2. We recommend creating the following connection: postgresql+psycopg2://postgres:password@localhost:5432/IS3107_Project such that[password: password, port_number: 5432, database_name: IS3107_Project] 
+1. Set up a PostgreSQL database using the following structure: ```postgresql+psycopg2://postgres:[password]@localhost:[port_number]/[database_name]``` 
+2. We recommend creating the following connection: ```postgresql+psycopg2://postgres:password@localhost:5432/IS3107_Project``` such that [password: password, port_number: 5432, database_name: IS3107_Project] 
 3. If your connection is different, it needs to be updated within the following tasks: transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data).
 4. Save the updated code as a python file on your local machine within the dags folder in your airflow directory
 6. Save the initial_tweets.json file on your local machine and update the directory in the transform_data() function
