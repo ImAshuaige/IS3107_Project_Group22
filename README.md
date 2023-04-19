@@ -26,8 +26,8 @@
 4. Once the notebook is open in Google Colab, click on the folder icon in the left sidebar to open the "Files" tab.
 5. Click the "Upload" button (the icon with an upward arrow) in the "Files" tab to upload the two CSV files (bitcoin.csv and Finalised_Sentiments.csv).
 6. Replace 
-   pd.read_csv('/content/drive/MyDrive/IS3107/bitcoin.csv')
-   pd.read_csv('/content/drive/MyDrive/IS3107/Finalised_Sentiments.csv')
+   ```pd.read_csv('/content/drive/MyDrive/IS3107/bitcoin.csv')```
+   ```pd.read_csv('/content/drive/MyDrive/IS3107/Finalised_Sentiments.csv')```
    with the updated file paths, such as:
    pd.read_csv('/content/bitcoin.csv')
    pd.read_csv('/content/Finalised_Sentiments.csv')
