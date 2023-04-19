@@ -6,9 +6,9 @@
 #### EDA.py
 
 ### Tools & Technologies
-- Storage - PostgreSQL
-- Orchestration - Airflow
-- Language - Python 
+- Storage - [PostgreSQL](https://www.postgresql.org/)
+- Orchestration - [Airflow](https://airflow.apache.org/)
+- Language - [Python](https://www.python.org/)
 
 ### Data 
 
