@@ -39,9 +39,10 @@ The objective of this Python file is to provide exploratory data analysis and da
 7. Run the entire notebook by clicking on "Runtime" in the top menu, and then selecting "Run all". Alternatively, you can run each cell one by one by clicking the "Play" button on the left side of each cell.
 8. Once the script finishes running, you'll see the plots.
 
-#### 3)Dashboard.py
-1. Run the dashboard.py script within the Python environment created earlier using ```python3 dashboard.py```
-2. Go to (http://127.0.0.1:8051) to view the dashboard below.
+#### 3)dashboard.py
+1. Replace the variables "password" and "database_schema" with the PostgreSQL password and schema name on your local computer.
+2. Run the dashboard.py script within the Python environment created earlier using ```python3 dashboard.py```
+3. Go to (http://127.0.0.1:8051) to view the dashboard below.
 
 ![Bitcoin Predictions Dashboard](https://i.ibb.co/r4CWjGL/bitcoin-dashboard.png)
 
