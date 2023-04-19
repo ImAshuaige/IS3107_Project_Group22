@@ -11,7 +11,8 @@
 - Language - [Python](https://www.python.org/)
 
 ### Data 
-
+- bitcoin.csv - Provides data on Bitcoin quotes
+- Finalised_Sentiments.csv - Provide data on Bitcoin-related Tweets' sentiments
 ### Setup
 
 ### Instructions on Running the Files
