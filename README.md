@@ -54,5 +54,5 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 2. Run the dashboard.py script within the Python environment created earlier using ```python3 dashboard.py```
 3. Go to (http://127.0.0.1:8051) to view the dashboard below.
 
-![Bitcoin Predictions Dashboard](https://i.ibb.co/r4CWjGL/bitcoin-dashboard.png)
+![Bitcoin Predictions Dashboard](https://i.ibb.co/S62MYZC/Screenshot-2023-04-20-at-4-59-52-PM-2.png)
 
