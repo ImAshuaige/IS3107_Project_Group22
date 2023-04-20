@@ -23,7 +23,7 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 
 ### Instructions on Running the Files
 1. Download all the files in the GitHub repository. 
-2. The order of running the files should be: 1)Dag.py -> 2)EDA.py -> 3)Dashboard.py
+2. The order of running the files should be: 1)dag.py -> 2)EDA.py -> 3)dashboard.py
 3. Create a Python environment by running ```python3 -m venv env``` and activate the environment using ```source env/bin/activate```
 4. In the environment created, install the required packages by running ```pip install -r requirements.txt```
 
