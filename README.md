@@ -8,6 +8,7 @@ The objective of this Python file is to collect, transform, and load data relate
 The objective of this Python file is to provide exploratory data analysis and data visualization for the obtained datasets. These techniques will help the user gain an overall and better understanding of the relationships, distributions, quality, and patterns of the data. For example, this Python file will analyze the general trend of Bitcoin price over time, as well as the correlation between tweet sentiment scores and the Bitcoin price etc. The insights gained from the EDA will then be used for prediction models later.
 
 #### Dashboard.py
+This Python file is used to run the dashboard on localhost:8051. On the dashboard, the predictions from our Machine Learning models can be seen in graph form. Additionally, the r2 score for each model is also displayed on the dashboard for each of the models used. This dashboard utilises the PostgreSQL database tables that would have been updated and filled after running the Dag.py file.
 
 ### Tools & Technologies
 - Storage - [PostgreSQL](https://www.postgresql.org/)
