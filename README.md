@@ -19,7 +19,6 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 - bitcoin.csv - Provides data on Bitcoin quotes
 - initial_tweets.json - Provides the initial Tweet data (from 13/03/23 to 12/04/23) we used before starting the streaming process
 - Finalised_Sentiments.csv - Provide data on Bitcoin-related Tweets' sentiments
-### Setup
 
 ### Instructions on Running the Files
 1. Download all the files in the GitHub repository. 
