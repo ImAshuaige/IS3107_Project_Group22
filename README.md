@@ -33,7 +33,7 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 3. If your connection is different from the connection defined in step 2, it needs to be updated within the following tasks: ```transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data)```.
 4. Save the updated code as a python file on your local machine within the ```dags``` folder in your airflow directory
 5. Unzip the ```initial_tweets.json``` file on your local machine and update the directory to ```initial_tweets.json``` in the ```transform_data()``` function
-6. Within the python environment activated earlier, navigate to the dags folder where the ```IS3107_project.py``` file was saved 
+6. Within the python environment activated earlier, navigate to the dags folder where the ```dag.py``` file was saved 
 7. Run the following command to execute the file and trigger the DAG: ```airflow dags test IS3107_project```
 8. Once this command is successfully completed, 3 tables will appear within PostgreSQL & PGAdmin 4: ```bitcoin_tweet, bitcoin_prices and bitcoin_tweets_sentiment```
 
