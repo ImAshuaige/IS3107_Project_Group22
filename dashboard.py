@@ -217,8 +217,7 @@ predictions = list()
 # walk-forward validation
 for t in range(len(y_test)):
    model = pm.auto_arima(history, trace=True, error_action="ignore", seasonal=True, stepwise=True, suppress_warnings=True)
-   model_fit = model.fit(history)
-   prediction, confint = model_fit.predict(n_periods=1, return_conf_int=True)
+   prediction, confint = model.predict(n_periods=1, return_conf_int=True)
    yhat = prediction[0]
    predictions.append(yhat)
    obs = y_test[t]
@@ -267,7 +266,7 @@ if yhat > result_df.iloc[len(result_df) - 2].Actual:
 else:
     increaseTime = False
 
-yhat1, confint = model_fit.predict(n_periods=1, return_conf_int=True)
+yhat1, confint = model.predict(n_periods=1, return_conf_int=True)
 yhat1 = yhat1[0]
 
 #Accuracy
@@ -680,7 +679,7 @@ app.layout = html.Div(
                                             dcc.Graph(figure=fig3, id="time-regression"),
                                             
                                             html.H5(
-                                                children="R-squared Score for Random Forest Model: " +  str(accuracy_TS),
+                                                children="R-squared Score for ARIMA model based on historical prices: " +  str(accuracy_TS),
                                                 style={
                                                     "textAlign": "center",
                                                     "color": "black",
