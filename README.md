@@ -37,7 +37,6 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 6. Within the python environment activated earlier, navigate to the dags folder where the ```IS3107_project.py``` file was saved 
 7. Run the following command to execute the file and trigger the DAG: ```airflow dags test IS3107_project```
 8. Once this command is successfully completed, 3 tables will appear within PostgreSQL & PGAdmin 4: ```bitcoin_tweet, bitcoin_prices and bitcoin_tweets_sentiment```
-9. Do we need to ask the user to create their own CoinMarketCap API and Snscrape accounts?
 
 #### 2)EDA.py
 1. Open your web browser and go to https://colab.research.google.com/.
