@@ -56,3 +56,5 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 
 ![Bitcoin Predictions Dashboard](https://i.ibb.co/S62MYZC/Screenshot-2023-04-20-at-4-59-52-PM-2.png)
 
+### Greetings from Group 22!
+![group photo](https://i.ibb.co/Hp39rvg/07groupphoto.jpg)
