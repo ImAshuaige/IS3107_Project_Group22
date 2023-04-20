@@ -30,7 +30,7 @@ This Python file is used to run the dashboard on localhost:8051. On the dashboar
 #### 1)Dag.py
 1. Download [PGAdmin 4](https://www.pgadmin.org/download/) to easily access the tables that will be created after running this file.
 2. Set up a PostgreSQL connection using the following structure: ```postgresql+psycopg2://postgres:password@localhost:5432/IS3107_Project``` such that the database has these specifications [**password**: password, **port_number**: 5432, **database_name**: IS3107_Project] 
-3. If your connection is different from the connection defined in step 3, it needs to be updated within the following tasks: ```transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data)```.
+3. If your connection is different from the connection defined in step 2, it needs to be updated within the following tasks: ```transform_data(), task_data_upload(table_name, data), create_bitcoin_tables(), sentiment_analysis(), bitcoin_stream(), tweets_stream() and sentiment_task_data_upload(table_name, data)```.
 4. Save the updated code as a python file on your local machine within the ```dags``` folder in your airflow directory
 5. Unzip the ```initial_tweets.json``` file on your local machine and update the directory to ```initial_tweets.json``` in the ```transform_data()``` function
 6. Within the python environment activated earlier, navigate to the dags folder where the ```IS3107_project.py``` file was saved 
